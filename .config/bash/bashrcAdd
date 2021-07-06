@@ -1,0 +1,9 @@
+# Pywal color scheme to new terminal window.
+(cat ~/.cache/wal/sequences &)
+
+
+# Aliases
+alias sshpi='ssh ubuntu@192.168.1.72 -p 10251'
+alias v='nvim'
+alias golive='node ~/utils/LiveServerReplica/golive.js'
+alias adddotfile='/usr/bin/git --git-dir=$HOME/.git.dotfiles --work-tree=$HOME'

@@ -1,0 +1,6 @@
+
+[user]
+	name = Alexander Timofeev
+	email = Timofeev.Alex.W@yandex.ru
+[credential]
+	helper = store --file ~/.config/git/.git-credentials
