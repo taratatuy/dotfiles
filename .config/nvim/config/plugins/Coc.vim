@@ -155,5 +155,7 @@ let g:coc_global_extensions = [
   \ 'coc-html',
   \ 'coc-prettier',
   \ 'coc-angular',
+  \ 'coc-docthis',
+  \ 'coc-eslint',
   \ ]
 
