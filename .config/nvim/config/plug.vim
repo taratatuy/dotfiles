@@ -17,6 +17,8 @@ Plug 'mattn/emmet-vim'
 
 Plug 'mhinz/vim-startify'
 
+Plug 'editorconfig/editorconfig-vim'
+
 " Plug 'prettier/vim-prettier', {
 "     \ 'do': 'npm install',
 "     \ 'branch': 'release/1.x' }

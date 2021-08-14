@@ -3,9 +3,11 @@
 " let mapleader=" "
 nmap <space> <leader>
 
-imap <esc><leader> <esc>:w<CR>
+" imap <esc><leader> <esc>:w<CR>
 " imap {{ {  }<esc>hha
 " imap (( (  )<esc>hha imap [[ []<esc>i imap << <><esc>i
+inoremap jk <esc>
+inoremap kj <esc>
 inoremap { {  }<esc>hha
 inoremap {<CR> {<CR><CR>}<esc>kS  
 inoremap (( ()<esc>i 

@@ -2,7 +2,6 @@
   "coc.preferences.formatOnSaveFiletypes": ["css", "less", "javascript", "typescript", "html"],
   "prettier.singleQuote": true,
   "prettier.eslintIntegration": false,
-  "angular.experimental-ivy": true,
   "eslint.options": {
     "rules": {
         "@typescript-eslint/no-inferrable-types": "off"
