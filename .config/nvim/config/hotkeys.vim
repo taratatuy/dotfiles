@@ -3,16 +3,18 @@
 " let mapleader=" "
 nmap <space> <leader>
 
-" imap <esc><leader> <esc>:w<CR>
-" imap {{ {  }<esc>hha
-" imap (( (  )<esc>hha imap [[ []<esc>i imap << <><esc>i
+inoremap {<space><space> {  }<esc>hha
+inoremap {<CR> {<CR><CR>}<esc>kS
+inoremap (<space><space> ()<esc>i
+inoremap [<space><space> []<esc>i
+inoremap <<space><space> <><esc>i
+
 inoremap jk <esc>
 inoremap kj <esc>
-inoremap { {  }<esc>hha
-inoremap {<CR> {<CR><CR>}<esc>kS  
-inoremap (( ()<esc>i 
-inoremap () ()
-inoremap [[ []<esc>i 
+inoremap JK <esc>
+inoremap KJ <esc>
+
+xnoremap far y<esc>:%s/<c-r>"//gc<Left><Left><Left>
 
 " Move lines in visual mode
 xnoremap K :move '<-2<CR>gv-gv
@@ -31,10 +33,17 @@ xnoremap <C-e> 3<C-e>
 nnoremap <C-w>< <C-w><<C-w>
 nnoremap <C-w>> <C-w>><C-w>
 
-" map <leader>f :find 
 " map <silent> <leader>t :bo term++rows=5<CR>
 
 " Open NetRW file explorer
-map <silent> <leader>e :Lexplore<CR>
-nmap <leader>d/ :CocCommand docthis.documentThis<CR>
+nnoremap <silent> <leader>e :Lexplore<CR>
+nnoremap <leader>d/ :CocCommand docthis.documentThis<CR>
 
+" Telescope binds
+nnoremap <C-p> <cmd>Telescope find_files<cr>
+nnoremap <leader>p <cmd>Telescope live_grep<cr>
+nnoremap <leader>gl <cmd>Telescope git_commits<cr>
+
+" Complition keys
+inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"

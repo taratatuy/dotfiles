@@ -9,3 +9,5 @@ source $HOME/.config/nvim/config/general.vim
 source $HOME/.config/nvim/config/colors.vim
 source $HOME/.config/nvim/config/hotkeys.vim
 
+lua require('lsp')
+lua require('general')

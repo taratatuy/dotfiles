@@ -150,12 +150,9 @@ command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organize
 
 let g:coc_global_extensions = [
   \ 'coc-css',
-  \ 'coc-json',
-  \ 'coc-tsserver',
-  \ 'coc-html',
-  \ 'coc-prettier',
   \ 'coc-angular',
-  \ 'coc-docthis',
   \ 'coc-eslint',
+  \ 'coc-prettier',
+  \ 'coc-docthis',
   \ ]
 
